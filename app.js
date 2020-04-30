@@ -9,6 +9,10 @@ const directorRouter = require("./routes/director");
 const songsRouter = require("./routes/songs.route");
 const usersRouter = require("./routes/users.route");
 
+app.get("/", (req, res) => {
+  res.send("main api");
+});
+
 app.use(express.json());
 app.use(cookieParser("notsogoodsecret"));
 
